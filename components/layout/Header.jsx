@@ -2,7 +2,7 @@ import Logo from "../ui/Logo";
 const Header = () => {
   return (
     <div>
-      <div className="h-[5.5rem]">
+      <div className="h-[5.5rem] bg-secondary">
        Burgerlerimiz
       </div>
       <div>

@@ -22,16 +22,16 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="flex gap-x-4 items-center btn-primary">
+        <div className="flex gap-x-4 items-center ">
           <a href="#">
-            <FaUserAlt />
+            <FaUserAlt  className="hover:text-primary transition-all"/>
           </a>
           <a href="#">
             <FaShoppingCart />
           </a>
-          <a href="#">
+          <button>
             <FaSearch />
-          </a>
+          </button>
           <a href="#">
             <button className="btn-primary">Order Online</button>
           </a>
@@ -41,4 +41,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header; 

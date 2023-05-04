@@ -33,7 +33,7 @@ const Header = () => {
             <FaSearch />
           </button>
           <a href="#">
-            <button className="btn-primary">Order Online</button>
+            <button className="btn-primary">Order Online.</button>
           </a>
         </div>
       </div>

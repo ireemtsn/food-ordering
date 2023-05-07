@@ -2,9 +2,10 @@ import { useState } from "react";
 import Logo from "../ui/Logo";
 import OutsideClickHandler from 'react-outside-click-handler';
 import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
+import Title from "../ui/Title";
 
 const Header = () => {
-  const [IsSearchModal, setIsSearchModal] = useState(false);
+  const [isSearchModal, setIsSearchModal] = useState(false);
   return (
     <div className="h-[5.5rem] bg-secondary">
       <div className="container mx-auto text-white flex justify-between items-center h-full">
@@ -41,12 +42,16 @@ const Header = () => {
         </div>
       </div> 
       
-      {/* Arama ikonuna tıkladığıktan sonra dışarı tıklarsak kaybolsun */}
+      {/* /* Arama ikonuna tıkladığıktan sonra dışarı tıklarsak kaybolsun */ }
     
-      {IsSearchModal && (
+      {isSearchModal && (
         <OutsideClickHandler onOutsideClick={
           ()=> setIsSearchModal(false) }>
-        <div className="text-9xl">MODAL</div>
+        <div className="">
+          <Title addClass="">
+              iremm
+          </Title>
+        </div>
         </OutsideClickHandler>
       )}
 

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Logo from "../ui/Logo";
-import OutsideClickHandler from 'react-outside-click-handler';
+
 import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
-import Title from "../ui/Title";
+import Search from "../ui/Search";
+
 
 const Header = () => {
   const [isSearchModal, setIsSearchModal] = useState(false);
@@ -45,14 +46,7 @@ const Header = () => {
       {/* /* Arama ikonuna tıkladığıktan sonra dışarı tıklarsak kaybolsun */ }
     
       {isSearchModal && (
-        <OutsideClickHandler onOutsideClick={
-          ()=> setIsSearchModal(false) }>
-        <div className="">
-          <Title addClass="">
-              iremm
-          </Title>
-        </div>
-        </OutsideClickHandler>
+        <Search  setIsSearchModal={setIsSearchModal}/>
       )}
 
     </div>

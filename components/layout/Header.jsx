@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Logo from "../ui/Logo";
-
-import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
 import Search from "../ui/Search";
+import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
+
 
 
 const Header = () => {
@@ -54,3 +54,42 @@ const Header = () => {
 };
 
 export default Header;  
+
+
+
+
+
+
+
+
+// const Search = ({ setIsSearchModal }) => {
+//   const [products, setProducts] = useState([]);
+//   const [filtered, setFiltered] = useState([]);
+//   const router = useRouter();
+
+//   useEffect(() => {
+//     const getProducts = async () => {
+//       try {
+//         const res = await axios.get(
+//           `${process.env.NEXT_PUBLIC_API_URL}/products`
+//         );
+//         setProducts(res.data);
+//         setFiltered(res.data.slice(0, 5));
+//       } catch (err) {
+//         console.log(err);
+//       }
+//     };
+//     setTimeout(() => {
+//       getProducts();
+//     }, 1000);
+//   }, []);
+// }
+
+
+
+
+
+
+
+
+
